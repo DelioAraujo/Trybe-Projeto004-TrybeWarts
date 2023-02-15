@@ -3,11 +3,12 @@ const login = () => {
   const senha = document.querySelector('#senha');
   const entrar = document.querySelector('#btn-entrar');
 
-  entrar.addEventListener('click', () => {
-    if (email.value === 'trybe@teste.com' && senha.value === '123456') {
-      alert('Olá, Tryber!');
+  entrar.addEventListener('click', (event) => {
+    event.preventDefault()
+    if (email.value === 'tryber@teste.com' && senha.value === '123456') {
+      window.alert('Olá, Tryber!');
     } else {
-      alert('Email ou senha inválidos');
+      window.alert('Email ou senha inválidos.');
     }
   });
 };
