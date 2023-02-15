@@ -14,27 +14,17 @@ const login = () => {
 
 login();
 
-
-
-
-
-
-
-
-
-
-
 // Parte de Maurício abaixo o que for adicionar por favor colocar acima
 
 // 18
 
-const checkbox = document.getElementById("agreement");
-const submitBtn = document.getElementById("submit-btn");
+const checkbox = document.getElementById('agreement');
+const submitBtn = document.getElementById('submit-btn');
 
 submitBtn.disabled = true;
 
-checkbox.addEventListener("change", function() {
-  if (this.checked) {
+checkbox.addEventListener('change', () => {
+  if (checkbox.checked) {
     submitBtn.disabled = false;
   } else {
     submitBtn.disabled = true;
