@@ -4,7 +4,7 @@ const login = () => {
   const entrar = document.querySelector('#btn-entrar');
 
   entrar.addEventListener('click', (event) => {
-    event.preventDefault()
+    event.preventDefault();
     if (email.value === 'tryber@teste.com' && senha.value === '123456') {
       window.alert('Olá, Tryber!');
     } else {
