@@ -15,3 +15,20 @@ entrar.addEventListener("click", ()=>{
 }
 login();
 
+
+// Parte de Maurício abaixo o que for adicionar por favor colocar acima
+
+// 18
+
+const checkbox = document.getElementById("agreement");
+const submitBtn = document.getElementById("submit-btn");
+
+submitBtn.disabled = true;
+
+checkbox.addEventListener("change", function() {
+  if (this.checked) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+});
